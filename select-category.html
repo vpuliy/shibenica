@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вибір категорії слів</title>
+    <link rel="stylesheet" href="styles.select-category.css">
+</head>
+<body>
+    <h1>Оберіть категорію слів</h1>
+    <form id="category-form">
+        <label for="word-category">Категорія слів:</label>
+        <select id="word-category">
+            <option value="animals">Тварини</option>
+            <option value="fruits">Фрукти</option>
+            <option value="colors">Кольори</option>
+            <option value="professions">Професії</option>
+
+        </select>
+        <button type="submit">Почати гру</button>
+    </form>
+
+    <script>
+        document.getElementById('category-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const selectedCategory = document.getElementById('word-category').value;
+            window.location.href = `game.html?category=${selectedCategory}`;
+        });
+    </script>
+</body>
+</html>

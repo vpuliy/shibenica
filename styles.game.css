@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+#hangman-img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.word-display {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.letter-buttons {
+    margin-bottom: 20px;
+}
+
+.letter-buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.letter-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#new-game-btn {
+    display: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Встановіть абсолютну позицію всередині батьківського контейнера */
+    bottom: 20px; /* Встановіть відстань від нижнього краю контейнера гри */
+    left: 50%; /* Центруйте кнопку по горизонталі */
+    transform: translateX(-50%); /* Центруйте кнопку по горизонталі */
+}
+
+#new-game-btn:hover {
+    background-color: #218838;
+}
+
+
+.letter-buttons button:disabled {
+    background-color: #ccc;
+    color: #999; 
+    cursor: not-allowed;
+}
+
+#change-category-btn {
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#change-category-btn:hover {
+    background-color: #c82333; 
+}

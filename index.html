@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра "Шибениця"</title>
+    <link rel="stylesheet" href="styles.index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ласкаво просимо до гри "Шибениця"!</h1>
+        <img src="images/hangman_6.png" alt="Hangman Image">
+        <p>Правила гри:</p>
+        <ul>
+            <li>Гравець обирає категорію слів перед початком гри.</li>
+            <li>Гравець має відгадати випадкове слово з обраної категорії, вводячи літери.</li>
+            <li>За кожну неправильну літеру зображення шибениці змінюється. Всього ви можете помилитися 6 разів.</li>
+            <li>Гра завершується, коли гравець відгадає слово або використає всі спроби.</li>
+        </ul>
+        <button id="start-game-btn">Почати гру</button>
+    </div>
+
+    <script>
+        document.getElementById('start-game-btn').addEventListener('click', () => {
+            window.location.href = 'select-category.html'; // Перенаправлення на сторінку вибору категорії
+        });
+    </script>
+</body>
+</html>

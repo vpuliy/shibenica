@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра "Шибениця"</title>
+    <link rel="stylesheet" href="styles.game.css"> <!-- Підключення зовнішнього CSS файлу -->
+</head>
+<body>
+    <div class="game-container">
+        <h1>Гра "Шибениця"</h1>
+        <div id="hangman-container">
+            <img id="hangman-img" src="images/hangman_0.png" alt="Hangman">
+        </div>
+        <div class="word-display" id="word-display"></div>
+        <div class="letter-buttons" id="letter-buttons"></div>
+        <div class="message" id="message"></div>
+        <button id="new-game-btn" style="display: none;">Нова гра</button>
+        <button id="change-category-btn" style="display: none;">Змінити категорію</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Підключення JavaScript файлу -->
+</body>
+</html>
